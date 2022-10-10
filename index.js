@@ -11,10 +11,56 @@ const POSITION_TO_FUNCTION_MAP = {
   left: positionTooltipLeft,
   right: positionTooltipRight,
 };
+var style = document.createElement("style");
+style.innerHTML = `
+.javascriptTooltipContainer{
+  position: fixed;
+  pointer-events: none;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.javascript-tooltip {
+    position: absolute;
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: rgb(229, 229, 229);
+    border-radius: 0.25rem;
+    word-spacing: 2px;
+    font-size: 0.7rem;
+    max-width: 200px;
+    word-wrap: break-word;
+    height:min-content;
+  }
 
+`;
+document.head.appendChild(style);
+// .javascript-tooltip-container {
+//   position: fixed;
+//   pointer-events: none;
+//   margin: 0;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+// }
+
+// .javascript-tooltip {
+//   position: absolute;
+//   padding: 0.6rem;
+//   background-color: rgba(0, 0, 0, 0.767);
+//   color: rgb(229, 229, 229);
+//   border-radius: 0.25rem;
+//   word-spacing: 2px;
+//   font-size: 0.7rem;
+//   max-width: 200px;
+//   word-wrap: break-word;
+// }
 
 const tooltipContainer = document.createElement("div");
-tooltipContainer.classList.add("javascript-tooltip-container");
+tooltipContainer.className = "javascript-tooltip-container";
 document.body.append(tooltipContainer);
 
 addGlobalEventListener("mouseover", "[data-tooltip]", (e) => {
