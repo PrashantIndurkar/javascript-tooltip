@@ -1,0 +1,14 @@
+{
+  "name": "javascript-tooltip",
+  "version": "1.0.0",
+  "description": "tooltip for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tooltip"
+  ],
+  "author": "prashant indurkar",
+  "license": "ISC"
+}
