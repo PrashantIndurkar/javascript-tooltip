@@ -1,3 +1,5 @@
+[Github](https://github.com/PrashantIndurkar/javascript-tooltip).
+
 # What is javascript-tooltip?
 
 Its a small tooltip library for javascript to help you get tooltip when you hover on text. its uses data attribute.

@@ -1,6 +1,6 @@
 {
   "name": "javascript-tooltip",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "tooltip for js",
   "main": "index.js",
   "type":"module",
